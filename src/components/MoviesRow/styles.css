@@ -1,0 +1,26 @@
+.movieRow {
+  width: 99999px;
+  margin: 0 0 30px 30px;
+}
+
+/* .movieRow h1 {
+  margin: 0 0 5px 30px;
+} */
+
+.movieRowItems {
+  /* display: inline-block; */
+}
+.movieRowItemsEach {
+  width: 150px;
+  display: inline-block;
+}
+
+.movieRowItems img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all 0.4s;
+}
+.movieRowItems img:hover {
+  transform: scale(1);
+  cursor: pointer;
+}
