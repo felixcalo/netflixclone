@@ -18,6 +18,10 @@ header {
 }
 .header--logo {
   height: 25px;
+  overflow: hidden;
+}
+.header--logo img {
+  height: 100%;
 }
 .header--user {
   height: 35px;

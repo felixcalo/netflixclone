@@ -3,6 +3,9 @@ import tmdb from '../../config'
 import './styles.css'
 
 export default function FeatureMovies({ item }) {
+
+    const extraireYearsFromDate = new Date(item.first_air_date);
+
     return (<div>
         <section className='featured' style={{
             backgroundSize: 'cover',
@@ -15,7 +18,7 @@ export default function FeatureMovies({ item }) {
                     <div className='featured--name'>{item.name}</div>
                     <div className='featured--infos'>
                         <div className='featured--points'>{item.vote_average} Pontos</div>
-                        <div className='featured--year'>{item.last_air_date}</div>
+                        <div className='featured--year'>{extraireYearsFromDate.getFullYear()}</div>
                         <div className='featured--seasons'>{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''}</div>
                     </div>
                     <div className='featured--sinopse'>{item.overview}</div>

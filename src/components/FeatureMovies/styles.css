@@ -43,9 +43,14 @@
   color: #999;
   font-size: 20px;
   width: 40%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .featured--buttons {
-  margin-top: 15px;
+  margin-top: 14px;
 }
 .featured--List--button,
 .featured--watch--button {
@@ -78,4 +83,27 @@
   font-size: 18px;
   margin-top: 15px;
   color: #999;
+}
+@media (max-width: 760px) {
+  .featured {
+    height: 90vh;
+  }
+  .featured--name {
+    font-size: 40px;
+  }
+  .featured--infos {
+    font-size: 16px;
+  }
+  .featured--sinopse {
+    width: 100vw;
+    font-size: 16px;
+    padding-right: 30px;
+  }
+  .featured--genres {
+    font-size: 16px;
+  }
+  .featured--List--button,
+  .featured--watch--button {
+    font-size: 16px;
+  }
 }
