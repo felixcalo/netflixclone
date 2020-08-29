@@ -1,7 +1,6 @@
 .movieRow {
   width: 999999px;
   margin: 0 0 30px 30px;
-
   cursor: pointer;
 }
 
@@ -35,11 +34,11 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.4s;
-  opacity: 1;
+  opacity: 0;
   overflow: hidden;
 }
-.movieRowRightIcon:hover,
-.movieRowLeftIcon:hover {
+.movieRow:hover .movieRowRightIcon,
+.movieRow:hover .movieRowLeftIcon {
   opacity: 1;
 }
 .movieRowLeftIcon {

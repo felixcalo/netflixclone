@@ -17,7 +17,7 @@ header {
   transition: ease all 0.9s;
 }
 .header--logo {
-  height: 25px;
+  height: 35px;
   overflow: hidden;
 }
 .header--logo img {

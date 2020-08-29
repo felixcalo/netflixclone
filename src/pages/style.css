@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   overflow-x: hidden;
+  outline: none !important;
+  outline-offset: none !important;
 }
 body {
   background-color: #111;
