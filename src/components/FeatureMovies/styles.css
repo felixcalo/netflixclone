@@ -97,17 +97,50 @@
   .featured--sinopse {
     width: 100vw;
     font-size: 16px;
-    padding-right: 30px;
   }
   .featured--genres {
     font-size: 16px;
   }
   .featured--List--button,
   .featured--watch--button {
-    font-size: 16px;
+    font-size: 14px;
   }
   .movieRowLeftIcon,
   .movieRowRightIcon {
     opacity: 1;
+  }
+  .featured--vertical {
+    padding-right: 30px;
+  }
+}
+@media (width: 320px) {
+  .featured {
+    height: 90vh;
+  }
+  .featured--name {
+    font-size: 30px;
+  }
+
+  .featured--List--button,
+  .featured--watch--button {
+    font-size: 12px;
+  }
+}
+@media (width: 280px) {
+  .featured {
+    height: 90vh;
+  }
+  .featured--name {
+    font-size: 20px;
+  }
+
+  .featured--List--button,
+  .featured--watch--button {
+    padding: 10px 10px;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .movieRow h1 {
+    font-size: 16px;
   }
 }
