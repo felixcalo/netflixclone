@@ -51,3 +51,36 @@
 .movieRowRightIcon {
   right: 0;
 }
+
+@media (max-width: 760px) {
+  .movieRow:hover .movieRowRightIcon, .movieRow:hover .movieRowLeftIcon {
+    cursor: default;
+  }
+  .movieRowLeftIcon, .movieRowRightIcon {
+    opacity: 1;
+    cursor: default;
+  }
+}
+
+@media (width: 320px) {
+  .movieRow:hover .movieRowRightIcon, .movieRow:hover .movieRowLeftIcon {
+    cursor: default;
+  }
+  .movieRowLeftIcon, .movieRowRightIcon {
+    opacity: 1;
+    cursor: default;
+  }
+}
+
+@media (width: 280px) {
+  .movieRow:hover .movieRowRightIcon, .movieRow:hover .movieRowLeftIcon {
+    cursor: default;
+  }
+  .movieRow h1 {
+    font-size: 16px;
+  }
+  .movieRowLeftIcon, .movieRowRightIcon {
+    opacity: 1;
+    cursor: default;
+  }
+}
