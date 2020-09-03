@@ -1,14 +1,17 @@
 .featured {
   height: 100vh;
 }
+
 .featured h1 {
   margin: 0;
 }
+
 .featured--vertical {
   width: inherit;
   height: inherit;
   background: linear-gradient(to top, #111 5%, transparent 90%);
 }
+
 .featured--horizontal {
   width: inherit;
   height: inherit;
@@ -20,24 +23,27 @@
   padding-bottom: 150px;
   padding-top: 70px;
 }
+
 .featured--name {
   font-size: 60px;
   font-weight: bold;
 }
+
 .featured--infos {
   font-size: 18px;
   font-weight: bold;
   margin-top: 15px;
 }
-.featured--points,
-.featured--year,
-.featured--seasons {
+
+.featured--points, .featured--year, .featured--seasons {
   display: inline-block;
   margin-right: 15px;
 }
+
 .featured--points {
   color: #46d369;
 }
+
 .featured--sinopse {
   margin-top: 15px;
   color: #999;
@@ -49,11 +55,12 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
 .featured--buttons {
   margin-top: 14px;
 }
-.featured--List--button,
-.featured--watch--button {
+
+.featured--List--button, .featured--watch--button {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
@@ -67,23 +74,27 @@
   opacity: 1;
   transition: ease all 0.6s;
 }
+
 .featured--List--button {
   background: #333;
   color: #fff;
 }
+
 .featured--watch--button {
   color: #333;
   background: #fff;
 }
-.featured--watch--button:hover,
-.featured--List--button:hover {
+
+.featured--watch--button:hover, .featured--List--button:hover {
   opacity: 0.7;
 }
+
 .featured--genres {
   font-size: 18px;
   margin-top: 15px;
   color: #999;
 }
+
 @media (max-width: 760px) {
   .featured {
     height: 90vh;
@@ -101,18 +112,17 @@
   .featured--genres {
     font-size: 16px;
   }
-  .featured--List--button,
-  .featured--watch--button {
+  .featured--List--button, .featured--watch--button {
     font-size: 14px;
   }
-  .movieRowLeftIcon,
-  .movieRowRightIcon {
+  .movieRowLeftIcon, .movieRowRightIcon {
     opacity: 1;
   }
   .featured--vertical {
     padding-right: 30px;
   }
 }
+
 @media (width: 320px) {
   .featured {
     height: 90vh;
@@ -120,12 +130,14 @@
   .featured--name {
     font-size: 30px;
   }
-
-  .featured--List--button,
-  .featured--watch--button {
+  .featured--List--button, .featured--watch--button {
     font-size: 12px;
   }
+  .movieRowLeftIcon, .movieRowRightIcon {
+    opacity: 1;
+  }
 }
+
 @media (width: 280px) {
   .featured {
     height: 90vh;
@@ -133,14 +145,15 @@
   .featured--name {
     font-size: 20px;
   }
-
-  .featured--List--button,
-  .featured--watch--button {
+  .featured--List--button, .featured--watch--button {
     padding: 10px 10px;
     margin-right: 5px;
     font-size: 12px;
   }
   .movieRow h1 {
     font-size: 16px;
+  }
+  .movieRowLeftIcon, .movieRowRightIcon {
+    opacity: 1;
   }
 }

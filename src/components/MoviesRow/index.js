@@ -11,7 +11,9 @@ function MoviesRow({ item }) {
 
     const [scrollValeur, setscrollValeurs] = useState(-400);
 
-    const MovieLeft = () => {
+    function movieLeft(e) {
+        e.preventDefault();
+
         let X = scrollValeur + Math.round(window.innerWidth / 2)
 
         if (X > 0) {
@@ -19,13 +21,13 @@ function MoviesRow({ item }) {
         } setscrollValeurs(X);
     }
 
-    const MovieRight = () => {
+    function movieRight(e) {
+        e.preventDefault();
 
         let x = scrollValeur - Math.round(window.innerWidth / 2);
-        let movieRowWidth = item.items.data.results.length * 150
-        if ((window.innerWidth - movieRowWidth) > x) {
-            x = (window.innerWidth - movieRowWidth) - 60;
-        } setscrollValeurs(x);
+        let movieRowWidth = item.items.data.results.length * 150;
+        if ((window.innerWidth - movieRowWidth) > x) { x = (window.innerWidth - movieRowWidth) - 60; }
+        setscrollValeurs(x);
     }
 
 
@@ -33,11 +35,11 @@ function MoviesRow({ item }) {
         <div className='movieRow'>
             <h1 >{item.title}</h1>
 
-            <div className="movieRowLeftIcon" onClick={MovieLeft}>
+            <div className="movieRowLeftIcon" onClick={movieLeft}>
                 <NavigateBeforeIcon style={{ fontSize: '50px' }} />
             </div>
-            <div className="movieRowRightIcon" >
-                <NavigateNextIcon style={{ fontSize: '50px' }} onClick={MovieRight} />
+            <div className="movieRowRightIcon" onClick={movieRight} >
+                <NavigateNextIcon style={{ fontSize: '50px' }} />
             </div>
 
             <div className='movieRowItems' style={{ marginLeft: scrollValeur, width: item.items.data.results.length * 150 }}>
