@@ -60,6 +60,9 @@
     opacity: 1;
     cursor: default;
   }
+  .movieRowItems img:hover {
+    cursor: default;
+  }
 }
 
 @media (width: 320px) {
@@ -68,6 +71,9 @@
   }
   .movieRowLeftIcon, .movieRowRightIcon {
     opacity: 1;
+    cursor: default;
+  }
+  .movieRowItems img:hover {
     cursor: default;
   }
 }
@@ -81,6 +87,9 @@
   }
   .movieRowLeftIcon, .movieRowRightIcon {
     opacity: 1;
+    cursor: default;
+  }
+  .movieRowItems img:hover {
     cursor: default;
   }
 }
